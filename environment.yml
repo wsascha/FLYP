@@ -1,0 +1,11 @@
+name: flyp
+channels:
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pytorch::pytorch
+  - pytorch::pytorch-cuda=11.8
+  - pip:
+    - --requirement requirements.txt
