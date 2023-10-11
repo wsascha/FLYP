@@ -3,9 +3,9 @@ import json
 
 import torch
 import numpy as np
-from src.models import utils
-from src.datasets.common import get_dataloader, maybe_dictionarize
-import src.datasets as datasets
+from flyp.models import utils
+from flyp.datasets.common import get_dataloader, maybe_dictionarize
+from flyp import datasets
 import torch.nn.functional as F
 
 

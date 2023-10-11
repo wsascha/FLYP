@@ -1,0 +1,6 @@
+braceexpand
+imagenetv2_pytorch @ git+https://github.com/modestyachts/ImageNetV2_pytorch
+h5py
+open_clip_torch
+webdataset
+wilds

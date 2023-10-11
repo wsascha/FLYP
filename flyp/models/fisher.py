@@ -7,13 +7,13 @@ import torch.nn.functional as F
 
 from tqdm.auto import tqdm
 
-from src.args import parse_arguments
-from src.datasets.common import get_dataloader, maybe_dictionarize
-from src.models.modeling import ImageClassifier
-from src.models import utils
-from src.models.utils import LabelSmoothing, fisher_save
+from flyp.args import parse_arguments
+from flyp.datasets.common import get_dataloader, maybe_dictionarize
+from flyp.models.modeling import ImageClassifier
+from flyp.models import utils
+from flyp.models.utils import LabelSmoothing, fisher_save
 
-import src.datasets as datasets
+from flyp import datasets
 
 ###############################################################################
 # TODO: Make these args

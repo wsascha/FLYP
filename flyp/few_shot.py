@@ -2,9 +2,9 @@ import os
 
 import numpy as np
 
-from src.models.flyp_loss_few_shot import flyp_loss_few_shot
-from src.models.modeling import CLIPEncoder
-from src.args import parse_arguments
+from flyp.models.flyp_loss_few_shot import flyp_loss_few_shot
+from flyp.models.modeling import CLIPEncoder
+from flyp.args import parse_arguments
 import logging
 
 

@@ -7,7 +7,7 @@ import PIL
 from PIL import Image
 import pickle
 import sys
-import src.templates as templates
+from flyp import templates
 
 template = getattr(templates, 'openai_imagenet_template')
 out = open(f"./datasets/csv/imagenet.csv", "w")

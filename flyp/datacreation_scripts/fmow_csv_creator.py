@@ -8,7 +8,7 @@ from PIL import Image
 import pickle
 import sys
 import pandas as pd
-import src.templates as templates
+from flyp import templates
 import datetime
 import pytz
 

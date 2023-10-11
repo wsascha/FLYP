@@ -6,17 +6,17 @@ import tqdm
 
 import torch
 import pandas as pd
-import clip.clip as clip
-from clip.loss import ClipLoss
+import flyp.clip.clip as clip
+from flyp.clip.loss import ClipLoss
 
-from src.args import parse_arguments
-from src.datasets.common import get_dataloader, maybe_dictionarize
-from src.models.eval import evaluate
-from src.models.modeling import ClassificationHead, CLIPEncoder, ImageClassifier
-from src.models.utils import cosine_lr, torch_load, LabelSmoothing, get_logits
-from src.models.zeroshot import get_zeroshot_classifier
-from src.datasets.laion import get_data
-import src.datasets as datasets
+from flyp.args import parse_arguments
+from flyp.datasets.common import get_dataloader, maybe_dictionarize
+from flyp.models.eval import evaluate
+from flyp.models.modeling import ClassificationHead, CLIPEncoder, ImageClassifier
+from flyp.models.utils import cosine_lr, torch_load, LabelSmoothing, get_logits
+from flyp.models.zeroshot import get_zeroshot_classifier
+from flyp.datasets.laion import get_data
+from flyp import datasets
 
 
 def flyp_loss(args, clip_encoder, classification_head, logger):

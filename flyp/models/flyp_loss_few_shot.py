@@ -1,12 +1,12 @@
 import torch
-from clip.loss import ClipLoss
+from flyp.clip.loss import ClipLoss
 
-from src.datasets.common import get_dataloader
-from src.models.eval import eval_single_batch_dataset, eval_single_dataset
-from src.models.utils import cosine_lr
-from src.models.zeroshot import get_zeroshot_classifier
-from src.datasets.laion import get_data
-import src.datasets as datasets
+from flyp.datasets.common import get_dataloader
+from flyp.models.eval import eval_single_batch_dataset, eval_single_dataset
+from flyp.models.utils import cosine_lr
+from flyp.models.zeroshot import get_zeroshot_classifier
+from flyp.datasets.laion import get_data
+from flyp import datasets
 
 from copy import deepcopy
 
