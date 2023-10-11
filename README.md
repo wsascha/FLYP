@@ -26,7 +26,8 @@ ln -s PATH_TO_YOUR_ILSVRC2012_DATASET ./datasets/data/ILSVRC2012
 
 python datacreation_scripts/imagenet_csv_creator.py
 
-python src/main.py --train-dataset=ImageNet \
+python flyp/main.py \
+    --train-dataset=ImageNet \
     --epochs=10 \
     --lr=1e-5 \
     --wd=0.1 \
@@ -47,7 +48,7 @@ ImageNet Finetuned CLIP ViT-B-16 checkpoint can be found [here][checkpoint].
 ```bash
 ln -s PATH_TO_YOUR_iWILDCam_DATASET ./datasets/data/iwildcam_v2.0
 python datacreation_scripts/iwildcam.py
-python src/main.py \
+python flyp/main.py \
     --train-dataset=IWildCamIDVal \
     --epochs=20 \
     --lr=1e-5 \
@@ -68,7 +69,7 @@ python src/main.py \
 ```bash
 ln -s PATH_TO_YOUR_FMOW_DATASET ./datasets/data/fmow_v1.1
 python datacreation_scripts/fmow_csv_creator.py
-python src/main.py \
+python flyp/main.py \
     --train-dataset=FMOWIDVal \
     --epochs=20 \
     --lr=1e-5 \
@@ -92,7 +93,7 @@ ln -s PATH_TO_YOUR_SST2_DATASET ./datasets/data/sst2
 python datacreation_scripts/sst2.py
 arch="ViT-B/16"
 k=16
-python src/few_shot.py \
+python flyp/few_shot.py \
     --train-dataset=sst2Val \
     --epochs=20 \
     --lr=1e-5 \
@@ -124,7 +125,7 @@ ln -s PATH_TO_YOUR_PATCH_CAM_DATASET ./datasets/data/patchcamelyon
 python datacreation_scripts/patchcamelyon.py
 arch="ViT-B/16"
 k=16
-python src/few_shot.py \
+python flyp/few_shot.py \
     --train-dataset=PatchCamelyonVal \
     --epochs=20 \
     --lr=1e-6 \
@@ -148,7 +149,8 @@ python src/few_shot.py \
 ```bash
 ln -s PATH_TO_YOUR_CALTECH_DATASET ./datasets/data/caltech-101
 python datacreation_scripts/caltech101.py
-python src/main.py --train-dataset=Caltech101Val \
+python flyp/main.py \
+    --train-dataset=Caltech101Val \
     --epochs=100 \
     --lr=1e-5 \
     --wd=0.0 \
@@ -170,7 +172,7 @@ python src/main.py --train-dataset=Caltech101Val \
 ```bash
 ln -s PATH_TO_YOUR_STANFORD_CARS_DATASET ./datasets/data/StanfordCars
 python datacreation_scripts/stanfordCars.py
-python src/main.py \
+python flyp/main.py \
     --train-dataset=StanfordCarsVal \
     --epochs=100 \
     --lr=1e-5 \
@@ -193,7 +195,7 @@ python src/main.py \
 This refers to the cross-entropy ablation, where we use language representations as a linear head over the image representations, projecting the image representations to class probabilities. Simply add a flag by `--ce_ablation` to any of the above cmd line scripts. Here we provide the cmd line script for ImageNet.
 
 ```bash
-python src/main.py \
+python flyp/main.py \
     --train-dataset=ImageNet \
     --epochs=10 \
     --lr=1e-5 \
