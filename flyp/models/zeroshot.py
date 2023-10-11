@@ -6,9 +6,7 @@ import numpy as np
 
 import clip.clip as clip
 
-import src.templates as templates
-import src.datasets as datasets
-
+from flyp import datasets, templates
 from flyp.args import parse_arguments
 from flyp.models.modeling import ClassificationHead, CLIPEncoder, ImageClassifier
 from flyp.models.eval import evaluate

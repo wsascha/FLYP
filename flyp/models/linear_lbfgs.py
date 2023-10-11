@@ -17,7 +17,7 @@ from flyp.models.eval import evaluate
 from flyp.models.modeling import ClassificationHead, CLIPEncoder, ImageClassifier
 from flyp.models.utils import cosine_lr, torch_load, LabelSmoothing, get_logits, get_logits_noscale
 from flyp.models.zeroshot import get_zeroshot_classifier
-import src.datasets as datasets
+from flyp import datasets
 
 
 def test_log_reg_warm_starting(train_features,

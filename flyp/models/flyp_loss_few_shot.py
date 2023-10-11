@@ -6,7 +6,7 @@ from flyp.models.eval import eval_single_batch_dataset, eval_single_dataset
 from flyp.models.utils import cosine_lr
 from flyp.models.zeroshot import get_zeroshot_classifier
 from flyp.datasets.laion import get_data
-import src.datasets as datasets
+from flyp import datasets
 
 from copy import deepcopy
 

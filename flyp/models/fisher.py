@@ -13,7 +13,7 @@ from flyp.models.modeling import ImageClassifier
 from flyp.models import utils
 from flyp.models.utils import LabelSmoothing, fisher_save
 
-import src.datasets as datasets
+from flyp import datasets
 
 ###############################################################################
 # TODO: Make these args

@@ -16,7 +16,7 @@ from flyp.models.modeling import ClassificationHead, CLIPEncoder, ImageClassifie
 from flyp.models.utils import cosine_lr, torch_load, LabelSmoothing, get_logits
 from flyp.models.zeroshot import get_zeroshot_classifier
 from flyp.datasets.laion import get_data
-import src.datasets as datasets
+from flyp import datasets
 
 
 def flyp_loss(args, clip_encoder, classification_head, logger):
