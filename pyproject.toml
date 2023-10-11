@@ -26,3 +26,6 @@ repository = "https://github.boschdevcloud.com/CR/aim-404"
 
 [tool.setuptools.dynamic]
 dependencies = { file = ["requirements.txt"] }
+
+[tool.setuptools.packages.find]
+include = ["flyp"]
