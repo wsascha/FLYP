@@ -3,7 +3,7 @@ import copy
 
 import clip.clip as clip
 
-from src.models import utils
+from flyp.models import utils
 import open_clip
 
 

@@ -2,12 +2,12 @@ from ast import arg
 import os
 import numpy as np
 import torch
-from src.models.eval import evaluate
-from src.models.flyp_loss import flyp_loss
-from src.models.ce_ablation import ce_ablation
-from src.models.modeling import ClassificationHead, CLIPEncoder, ImageClassifier
-from src.models.utils import fisher_load
-from src.args import parse_arguments
+from flyp.models.eval import evaluate
+from flyp.models.flyp_loss import flyp_loss
+from flyp.models.ce_ablation import ce_ablation
+from flyp.models.modeling import ClassificationHead, CLIPEncoder, ImageClassifier
+from flyp.models.utils import fisher_load
+from flyp.args import parse_arguments
 import logging
 import random
 

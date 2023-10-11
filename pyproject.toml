@@ -24,8 +24,5 @@ documentation = "https://pages.github.boschdevcloud.com/CR/aim-404"
 homepage = "https://pages.github.boschdevcloud.com/CR/aim-404"
 repository = "https://github.boschdevcloud.com/CR/aim-404"
 
-[tool.setuptools]
-packages = ["src"]
-
 [tool.setuptools.dynamic]
 dependencies = { file = ["requirements.txt"] }

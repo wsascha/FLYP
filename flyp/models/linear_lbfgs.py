@@ -11,12 +11,12 @@ from clip.loss import ClipLoss
 from sklearn.linear_model import LogisticRegression, SGDClassifier
 import numpy as np
 
-from src.args import parse_arguments
-from src.datasets.common import get_dataloader, maybe_dictionarize, FeatureDataset
-from src.models.eval import evaluate
-from src.models.modeling import ClassificationHead, CLIPEncoder, ImageClassifier
-from src.models.utils import cosine_lr, torch_load, LabelSmoothing, get_logits, get_logits_noscale
-from src.models.zeroshot import get_zeroshot_classifier
+from flyp.args import parse_arguments
+from flyp.datasets.common import get_dataloader, maybe_dictionarize, FeatureDataset
+from flyp.models.eval import evaluate
+from flyp.models.modeling import ClassificationHead, CLIPEncoder, ImageClassifier
+from flyp.models.utils import cosine_lr, torch_load, LabelSmoothing, get_logits, get_logits_noscale
+from flyp.models.zeroshot import get_zeroshot_classifier
 import src.datasets as datasets
 
 
