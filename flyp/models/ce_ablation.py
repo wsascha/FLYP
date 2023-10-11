@@ -6,8 +6,8 @@ import tqdm
 
 import torch
 import pandas as pd
-import clip.clip as clip
-from clip.loss import ClipLoss
+import flyp.clip.clip as clip
+from flyp.clip.loss import ClipLoss
 
 from flyp.args import parse_arguments
 from torch.nn import functional as F

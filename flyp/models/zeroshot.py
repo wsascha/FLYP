@@ -4,7 +4,7 @@ from tqdm import tqdm
 
 import numpy as np
 
-import clip.clip as clip
+import flyp.clip.clip as clip
 
 from flyp import datasets, templates
 from flyp.args import parse_arguments

@@ -6,8 +6,8 @@ import tqdm
 
 import torch
 import pandas as pd
-import clip.clip as clip
-from clip.loss import ClipLoss
+import flyp.clip.clip as clip
+from flyp.clip.loss import ClipLoss
 from sklearn.linear_model import LogisticRegression, SGDClassifier
 import numpy as np
 

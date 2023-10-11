@@ -1,7 +1,7 @@
 import torch
 import copy
 
-import clip.clip as clip
+import flyp.clip.clip as clip
 
 from flyp.models import utils
 import open_clip

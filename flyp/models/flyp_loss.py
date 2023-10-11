@@ -6,8 +6,8 @@ import tqdm
 
 import torch
 import pandas as pd
-import clip.clip as clip
-from clip.loss import ClipLoss
+import flyp.clip.clip as clip
+from flyp.clip.loss import ClipLoss
 
 from flyp.args import parse_arguments
 from flyp.datasets.common import get_dataloader, maybe_dictionarize

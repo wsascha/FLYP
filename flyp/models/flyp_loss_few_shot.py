@@ -1,5 +1,5 @@
 import torch
-from clip.loss import ClipLoss
+from flyp.clip.loss import ClipLoss
 
 from flyp.datasets.common import get_dataloader
 from flyp.models.eval import eval_single_batch_dataset, eval_single_dataset
